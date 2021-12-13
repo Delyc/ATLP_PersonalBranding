@@ -1,0 +1,435 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.span {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+header {
+  height: 50vh;
+  position: relative;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  z-index: 3;
+}
+
+.masthead {
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.post-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 100;
+}
+
+.header {
+  color: #000;
+}
+
+.span {
+  color: #000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  transition: 0.5s ease;
+  background-color: #000;
+  z-index: -1;
+}
+
+.post-heading {
+  width: 60%;
+}
+
+span {
+  color: #fff;
+}
+
+.relative {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgb(238, 174, 202);
+  }
+}
+
+.relative > h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post {
+  width: calc(100% / 3.6);
+  margin: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+.posted {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.text {
+  width: 50%;
+  margin: auto;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  transition: font-size 0.5s linear;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* .home-btn {
+    margin: 1rem;
+
+} */
+
+.nav > h1:hover {
+  font-size: 2.1rem;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 10px solid blue;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* login pop up */
+#login {
+  position: absolute;
+  /* background gradient */
+  background: rgb(238, 174, 202);
+  height: 50vh;
+  width: 50vw;
+  border-radius: 10px;
+  /* box shadow */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#sign-up {
+  position: absolute;
+  /* background gradient */
+  background: rgb(238, 174, 202);
+  height: 70vh;
+  width: 70vw;
+  border-radius: 10px;
+  /* box shadow */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#sign-up > h1 {
+  margin-left: 350px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  padding-left: 0.5rem;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  outline: rgb(173, 118, 142);
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.btn-primary {
+  margin-left: 50%;
+}
+
+.home {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 2rem;
+  text-decoration: underline;
+}
+
+.tologin {
+  color: #fff;
+}
+
+.tologin:hover {
+  color: #000;
+}
+/* .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 10px solid blue;
+} */
+.agreement {
+  margin-left: 400px;
+  margin-top: 10px;
+  /* background-position: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.signup > .sex {
+  margin-left: 100px;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+.intro > img {
+  float: right;
+  width: 20px;
+  height: 10px;
+}
+.footer {
+  width: auto;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 500px;
+  background: rgb(238, 174, 202);
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 100px;
+}
+
+.about,
+.contact,
+.links {
+  /* margin-top: 800px;
+  position: absolute;
+  /* background gradient */
+  margin-top: 10px;
+  height: 40vh;
+  width: 20vw;
+  border-radius: 10px;
+  /* box shadow */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  left: 50%;
+  top: 50%;
+  opacity: 0.1px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.contact {
+}
+
+.form {
+  width: 30%;
+  margin: auto;
+
+  display: flex;
+  padding: 1rem;
+} 
+.messageme {
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.group1,
+.group2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.group1 {
+  margin-right: 10rem;
+}
+
+textarea,
+input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #021222;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 250px;
+}
+input {
+  height: 30px;
+}
+
+input:active {
+  outline: thin solid #fff;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 2rem;
+  width: max-content;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #021222;
+  background-color: #fff;
+}
+
+.btn:hover {
+  background-color: rgba(148, 187, 233, 1);
+  color: #fff;
+  transform: scale(1.1);
+}

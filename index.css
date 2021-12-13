@@ -10,8 +10,8 @@ body {
   
 }
 .header {
-  background-color: rgb(225, 225, 225);
-  opacity: 0.5px;
+  background-color:white;
+  
   color: black;
   display: flex;
   flex-direction: row;
@@ -280,13 +280,14 @@ input:active {
   padding: 0.5rem 1rem;
   width: max-content;
   cursor: pointer;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
   margin-left: 5px;
   color: #000;
   margin-top: 0px;
   background-color: #ffc107;
   margin-right: 10px;
   border-radius: 10px;
+  transition: all 0.8s ease;
   
 }
 
@@ -295,7 +296,7 @@ input:active {
   border-radius: 10px;
   color: #fff;
   transform: scale(1.1);
-
+  transition: all 0.5s ease;
 }
 
 .introduction {
@@ -383,17 +384,7 @@ input:active {
   text-align: center;
   font-size: 18px;
 }
-.log > img{
-    
-    
-    border-radius: 30px;
-    margin-top: 27px;
-    margin-left: 0;
-    width: 200px;
-    height: 100px;
-    
-    
-}
+
 
 .bigpic {
   height: 100%;
@@ -424,9 +415,9 @@ input:active {
 }
 .abt,
 .conta,
-serv {
+.serv {
   color: #ffc107;
-  margin-left: 30px;
+  margin-left: 0px;
   border-radius: 10px;
 }
 .icons {
@@ -456,11 +447,7 @@ serv {
   width: 30vw;
 }
 
-.logo > img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-}
+
 
 .logo {
   margin-left: 0;
